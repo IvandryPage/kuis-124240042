@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:kuis_mobile_124240042/pages/login.dart';
-import 'package:kuis_mobile_124240042/pages/profile.dart';
 
 void main() {
   runApp(const MainApp());

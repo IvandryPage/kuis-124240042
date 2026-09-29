@@ -4,7 +4,7 @@ import 'package:kuis_mobile_124240042/pages/login.dart';
 class ProfilePage extends StatefulWidget {
   final String username;
 
-  ProfilePage({super.key, required this.username});
+  const ProfilePage({super.key, required this.username});
 
   @override
   State<ProfilePage> createState() => _ProfilePageState();
@@ -70,7 +70,7 @@ class _ProfilePageState extends State<ProfilePage> {
                 InkWell(
                   onTap: () {
                     setState(() {
-                      _selectedIndex = 1;
+                      _selectedIndex = 2;
                     });
                   },
                   child: Container(
@@ -83,7 +83,7 @@ class _ProfilePageState extends State<ProfilePage> {
                 InkWell(
                   onTap: () {
                     setState(() {
-                      _selectedIndex = 1;
+                      _selectedIndex = 3;
                     });
                   },
                   child: Container(
