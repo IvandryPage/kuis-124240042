@@ -12,28 +12,6 @@ class ProfilePage extends StatefulWidget {
 
 class _ProfilePageState extends State<ProfilePage> {
   int _selectedIndex = 0;
-  final List<Widget> avatars = [
-    const CircleAvatar(
-      radius: 40,
-      backgroundColor: Colors.green,
-      child: Icon(Icons.person, size: 44),
-    ),
-    const CircleAvatar(
-      radius: 40,
-      backgroundColor: Colors.red,
-      child: Icon(Icons.person, size: 44),
-    ),
-    const CircleAvatar(
-      radius: 40,
-      backgroundColor: Colors.blue,
-      child: Icon(Icons.person, size: 44),
-    ),
-    const CircleAvatar(
-      radius: 40,
-      backgroundColor: Colors.purple,
-      child: Icon(Icons.person, size: 44),
-    )
-  ];
 
   final List<Color> colors = [
     Colors.green,
@@ -57,7 +35,11 @@ class _ProfilePageState extends State<ProfilePage> {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            avatars[_selectedIndex],
+            CircleAvatar(
+              radius: 40,
+              backgroundColor: colors[_selectedIndex],
+              child: Icon(Icons.person, size: 44),
+            ),
             const SizedBox(height: 16),
             const Text(
               'Profile',
