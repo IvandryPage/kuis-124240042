@@ -54,40 +54,53 @@ class _ProfilePageState extends State<ProfilePage> {
               mainAxisAlignment: MainAxisAlignment.center,
               spacing: 8.0,
               children: [
-                ElevatedButton(
-                  onPressed: () {
+                InkWell(
+                  onTap: () {
                     setState(() {
                       _selectedIndex = 1;
                     });
                   },
-                  style: ElevatedButton.styleFrom(backgroundColor: colors[1]),
-                  child: null,
+                  child: Container(
+                    width: 32,
+                    height: 32,
+                    decoration:
+                        BoxDecoration(shape: BoxShape.circle, color: colors[1]),
+                  ),
                 ),
-                ElevatedButton(
-                  onPressed: () {
+                InkWell(
+                  onTap: () {
                     setState(() {
-                      _selectedIndex = 2;
+                      _selectedIndex = 1;
                     });
                   },
-                  style: ElevatedButton.styleFrom(backgroundColor: colors[2]),
-                  child: null,
+                  child: Container(
+                    width: 32,
+                    height: 32,
+                    decoration:
+                        BoxDecoration(shape: BoxShape.circle, color: colors[2]),
+                  ),
                 ),
-                ElevatedButton(
-                  onPressed: () {
+                InkWell(
+                  onTap: () {
                     setState(() {
-                      _selectedIndex = 3;
+                      _selectedIndex = 1;
                     });
                   },
-                  style: ElevatedButton.styleFrom(backgroundColor: colors[3]),
-                  child: null,
-                )
+                  child: Container(
+                    width: 32,
+                    height: 32,
+                    decoration:
+                        BoxDecoration(shape: BoxShape.circle, color: colors[3]),
+                  ),
+                ),
               ],
             ),
             const SizedBox(height: 8),
             ElevatedButton(
               onPressed: logout,
               style: ElevatedButton.styleFrom(
-                  backgroundColor: colors[_selectedIndex]),
+                  backgroundColor: colors[_selectedIndex],
+                  foregroundColor: Colors.white),
               child: Text("Logout"),
             )
           ],
