@@ -1,3 +1,5 @@
-# kuis_mobile_124240042
+# Kuis Mobile 124240042
 
-A new Flutter project.
+Nama    : Galang Ivandry
+NIM     : 124240042
+Kelas   : Praktikum Pemrograman Mobile SI-B
